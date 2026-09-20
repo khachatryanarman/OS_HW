@@ -17,10 +17,13 @@ int main() {
 
 	
 		
+	//	exit(1)	;
+	
 	if (atexit(print) != 0) {
         	printf("Failed to register print\n");
        		return 1;
    	}
+	//	exit(1)	;
 	if (atexit(print2) != 0) {
         	printf("Failed to register print2\n");
        		return 1;
